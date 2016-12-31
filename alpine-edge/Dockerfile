@@ -3,16 +3,16 @@ MAINTAINER Joel Noyce Barnham <joelnbarnham@gmail.com>
 
 RUN \
 	apk add --update \
-		python \
-		python-dev \
-		py-pip \
+		python2 \
+		python2-dev \
+		py2-pip \
 		build-base \
 	&& \
 	pip install dumb-init && \
 	apk del \
-		python \
-		python-dev \
-		py-pip \
+		python2 \
+		python2-dev \
+		py2-pip \
 		build-base \
 	&& \
 	rm -rf /var/cache/apk/* && \
