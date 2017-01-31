@@ -19,3 +19,4 @@ RUN \
 	:
 
 ENTRYPOINT ["dumb-init"]
+CMD ["/bin/sh"]
