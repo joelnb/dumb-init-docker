@@ -1,5 +1,5 @@
 FROM debian:latest
-MAINTAINER Joel Noyce Barnham <joelnbarnham@gmail.com>
+LABEL maintainer="joelnbarnham@gmail.com"
 
 RUN \
 	export DEBIAN_FRONTEND=noninteractive && \

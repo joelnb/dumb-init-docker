@@ -1,5 +1,5 @@
 FROM alpine:latest
-MAINTAINER Joel Noyce Barnham <joelnbarnham@gmail.com>
+LABEL maintainer="joelnbarnham@gmail.com"
 
 RUN \
 	apk add --update \

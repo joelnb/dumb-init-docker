@@ -1,5 +1,5 @@
 FROM fedora:latest
-MAINTAINER Joel Noyce Barnham <joelnbarnham@gmail.com>
+LABEL maintainer="joelnbarnham@gmail.com"
 
 RUN \
 	dnf install -y 'dnf-command(copr)' && \
