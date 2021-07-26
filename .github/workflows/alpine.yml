@@ -42,3 +42,13 @@ jobs:
           file: ./alpine-edge/Dockerfile
       - name: Image digest
         run: echo ${{ steps.docker_build_edge.outputs.digest }}
+      - name: Build and push Alpine 3
+        id: docker_build_3
+        uses: docker/build-push-action@v2
+        with:
+          push: true
+          tags: joelnb/dumb-init-alpine:3
+          context: ./alpine-3
+          file: ./alpine-3/Dockerfile
+      - name: Image digest
+        run: echo ${{ steps.docker_build_3.outputs.digest }}
