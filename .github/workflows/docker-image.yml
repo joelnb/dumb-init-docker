@@ -20,16 +20,16 @@ jobs:
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
-      - name: Build and push Ubuntu Trusty
-        id: docker_build_trusty
-        uses: docker/build-push-action@v2
-        with:
-          push: true
-          tags: joelnb/dumb-init-ubuntu:trusty
-          context: ./ubuntu-trusty
-          file: ./ubuntu-trusty/Dockerfile
-      - name: Image digest
-        run: echo ${{ steps.docker_build_trusty.outputs.digest }}
+      # - name: Build and push Ubuntu Trusty
+      #   id: docker_build_trusty
+      #   uses: docker/build-push-action@v2
+      #   with:
+      #     push: true
+      #     tags: joelnb/dumb-init-ubuntu:trusty
+      #     context: ./ubuntu-trusty
+      #     file: ./ubuntu-trusty/Dockerfile
+      # - name: Image digest
+      #   run: echo ${{ steps.docker_build_trusty.outputs.digest }}
       - name: Build and push Ubuntu Xenial
         id: docker_build_xenial
         uses: docker/build-push-action@v2
