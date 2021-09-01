@@ -1,4 +1,4 @@
-FROM debian:latest
+FROM debian:bullseye
 LABEL maintainer="joelnbarnham@gmail.com"
 
 RUN \
