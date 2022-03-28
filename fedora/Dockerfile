@@ -4,7 +4,7 @@ LABEL maintainer="joelnbarnham@gmail.com"
 RUN \
 	dnf install -y python-pip && \
 	pip install dumb-init && \
-	dnf remove -y 'python-pip' && \
+	dnf remove -y python-pip && \
 	dnf clean -y all && \
 	:
 
