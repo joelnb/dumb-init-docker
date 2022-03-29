@@ -1,4 +1,4 @@
-FROM debian:jessie
+FROM debian:8
 LABEL maintainer="joelnbarnham@gmail.com"
 
 RUN \
