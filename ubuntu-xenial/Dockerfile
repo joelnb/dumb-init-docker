@@ -7,14 +7,14 @@ RUN \
 	apt-get upgrade -y && \
 	apt-get install -y \
 		build-essential \
-		python-dev \
-		python-pip \
+		python3-dev \
+		python3-pip \
 	&& \
 	pip install dumb-init && \
 	apt-get remove -y \
 		build-essential \
-		python-dev \
-		python-pip \
+		python3-dev \
+		python3-pip \
 	&& \
 	apt-get autoremove -y && \
 	apt-get clean && \
