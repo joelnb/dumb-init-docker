@@ -10,7 +10,7 @@ RUN \
 		python3-dev \
 		python3-pip \
 	&& \
-	pip install dumb-init && \
+	pip3 install dumb-init && \
 	apt-get remove -y \
 		build-essential \
 		python3-dev \
